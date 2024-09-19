@@ -1,0 +1,90 @@
+.my-liquid-box {
+  border: 3px solid transparent; // Set border width, use transparent initially
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.8); // Neon blue glow effect
+  padding: 40px;
+  max-width: 1200px;
+  background-color: #f9f9f908;
+  color: white;
+
+  .my-image {
+    max-width: 100%; // Make sure image is responsive
+    height: auto;
+    border-radius: 50%;
+
+    box-shadow: 0 0 20px rgba(96, 181, 255, 0.6),
+      // Outer glow shadow
+      0 0 40px rgba(127, 207, 255, 0.5),
+      0 0 60px rgba(160, 234, 255, 0.4); // Additional glow layers
+    transition: box-shadow 0.3s ease; // Smooth hover effect
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(96, 181, 255, 0.8),
+        0 0 50px rgba(127, 207, 255, 0.7), 0 0 70px rgba(160, 234, 255, 0.6); // Enhanced glow on hover
+    }
+  }
+
+  .text-box {
+    padding: 20px 40px;
+    font-size: 16px;
+  }
+
+  // Custom gradient button style
+  .btn-primary {
+    background: linear-gradient(
+      45deg,
+      #00c6ff,
+      #0072ff
+    ); // Gradient neon light blue
+    border: none; // Remove default border
+    color: white; // Text color for better contrast
+
+    &:hover {
+      background: linear-gradient(
+        45deg,
+        #0072ff,
+        #00c6ff
+      ); // Inverse gradient for hover effect
+      color: white; // Ensure text color remains readable
+    }
+  }
+
+  // Optional: Adjust focus styles if needed
+  .btn-primary:focus,
+  .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); // Customize focus shadow
+  }
+
+  // ICONS STYLING //
+  .social-icons a {
+    color: rgb(255, 255, 255); // Default color for the icons
+    text-decoration: none; // Remove underline from links
+    transition: color 0.5s ease; // Smooth transition effect
+  }
+
+  /* Apply hover effect to the icons */
+  .social-icons a:hover {
+    color: #a0eaff; // Brighter blue on hover
+  }
+}
+
+// GLOWING TEXT //
+.navbar-brand {
+  color: #00c6ff; // Neon light blue text color
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.7), 0 0 20px rgba(0, 198, 255, 0.5),
+    0 0 30px rgba(0, 198, 255, 0.3);
+}
+
+// Hover Effects //
+.footer-content,
+.p {
+  color: #00c6ff; // Neon light blue text color
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.7), 0 0 20px rgba(0, 198, 255, 0.5),
+    0 0 30px rgba(0, 198, 255, 0.3);
+  background-color: black;
+}
+
+.navbar-brand:hover,
+.footer-content p:hover {
+  text-shadow: 0 0 12px rgba(0, 198, 255, 1), 0 0 25px rgba(0, 198, 255, 0.7),
+    0 0 40px rgba(0, 198, 255, 0.5);
+}

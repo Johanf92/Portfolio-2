@@ -27,3 +27,34 @@ Follow these steps to set up and run the project locally.
    git clone <repository-url>
    cd portfolio-2
    ```
+
+Install dependencies:
+
+Run the following command to install the required npm packages:
+
+bash
+
+npm install
+
+Build the project:
+
+To compile the SCSS files to CSS, use the following command:
+
+bash
+
+npm run build
+
+Or to watch for changes and automatically rebuild the CSS:
+
+bash
+
+npm run watch
+
+Open the project:
+
+Open index.html in your browser to view the portfolio.
+
+Scripts
+
+    npm run build - Compiles SCSS files to CSS.
+    npm run watch - Watches for changes and recompiles SCSS files automatically.

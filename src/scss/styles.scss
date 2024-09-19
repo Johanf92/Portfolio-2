@@ -1,1 +1,8 @@
+$primary: transparent;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "variables.scss";
+@import "main.scss";
+@import "form.scss";
+@import "about.scss";
