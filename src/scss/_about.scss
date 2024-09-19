@@ -1,0 +1,43 @@
+.about-me-container {
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.image-container {
+  border: 1px solid transparent; // Set border width, use transparent initially
+  box-shadow: 0 0 10px 4px rgba(0, 198, 255, 0.8); // Neon blue glow effect
+  border-radius: 2px; /* Adjust the radius for rounded corners */
+  background: linear-gradient(rgb(0, 0, 0), rgb(41, 41, 41)),
+    /* Base color for content area */ linear-gradient(135deg, #a0eaff, #00c6ff); /* Gradient border color */
+  //background-origin: border-box; /* Ensure gradient is applied to border */
+  //background-clip: content-box, border-box; /* Apply gradient to border only */
+  padding: 15px; /* Space between border and images */
+  margin-top: 20px; /* Space above the image container */
+  margin-bottom: 20px;
+
+  .col-md-4 {
+    padding: 0; /* Remove padding from columns to ensure images align correctly */
+
+    img {
+      border-radius: 8px; /* Optional: add rounded corners to images */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: add shadow to images */
+      width: auto; /* Ensure images scale responsively */
+      max-height: 450px; /* Maintain aspect ratio */
+    }
+  }
+}
+
+.footer-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #000000, #434343);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  padding: 10px; /* Adjust padding as needed */
+}

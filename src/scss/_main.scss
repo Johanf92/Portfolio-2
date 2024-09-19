@@ -28,23 +28,14 @@
     font-size: 16px;
   }
 
-  // Custom gradient button style
   .btn-primary {
-    background: linear-gradient(
-      45deg,
-      #00c6ff,
-      #0072ff
-    ); // Gradient neon light blue
-    border: none; // Remove default border
-    color: white; // Text color for better contrast
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
 
     &:hover {
-      background: linear-gradient(
-        45deg,
-        #0072ff,
-        #00c6ff
-      ); // Inverse gradient for hover effect
-      color: white; // Ensure text color remains readable
+      background: linear-gradient(45deg, #0072ff, #00c6ff);
+      color: white;
     }
   }
 
@@ -61,15 +52,14 @@
     transition: color 0.5s ease; // Smooth transition effect
   }
 
-  /* Apply hover effect to the icons */
   .social-icons a:hover {
-    color: #a0eaff; // Brighter blue on hover
+    color: #a0eaff;
   }
 }
 
 // GLOWING TEXT //
 .navbar-brand {
-  color: #00c6ff; // Neon light blue text color
+  color: #00c6ff;
   text-shadow: 0 0 8px rgba(0, 198, 255, 0.7), 0 0 20px rgba(0, 198, 255, 0.5),
     0 0 30px rgba(0, 198, 255, 0.3);
 }
@@ -77,10 +67,18 @@
 // Hover Effects //
 .footer-content,
 .p {
+  //position//
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  //color//
   color: #00c6ff; // Neon light blue text color
   text-shadow: 0 0 8px rgba(0, 198, 255, 0.7), 0 0 20px rgba(0, 198, 255, 0.5),
     0 0 30px rgba(0, 198, 255, 0.3);
-  background-color: black;
+  background: linear-gradient(135deg, #000000, #424242);
+  //cursor//
+  cursor: pointer;
 }
 
 .navbar-brand:hover,
